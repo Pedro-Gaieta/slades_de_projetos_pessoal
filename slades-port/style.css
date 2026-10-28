@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+     height: var(--height);
+}
+.conteiner{
+    width: 100%;
+    height: var(--height);
+}
+.conteiner img{
+    width: 100%;
+    border-radius: 2rem;
+}
+.carrosel{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.item{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 100%;
+    animation: rolaguem 10s linear infinite;
+    animation-delay: var(--deley);
+}
+.item img{
+    width: 100%;
+}
+@keyframes rolaguem {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -50px;
+    }
+}
